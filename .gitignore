@@ -23,6 +23,11 @@
 *.dll
 *.so.*
 
+testbin
+testobj
+obj
+# test coverages
+htmlcov
 
 # Fortran module files
 *.mod
@@ -48,7 +53,6 @@ build-*/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 install_manifest.txt 
 compile_commands.json
 
