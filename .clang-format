@@ -1,0 +1,7 @@
+AllowShortIfStatementsOnASingleLine=true
+AllowShortLoopsOnASingleLine=true
+AlwaysBreakTemplateDeclarations=true
+BasedOnStyle=WebKit
+BreakBeforeBraces=Attach
+IndentWidth=4
+UseTab=Never
