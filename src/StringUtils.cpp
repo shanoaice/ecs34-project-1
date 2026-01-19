@@ -1,10 +1,13 @@
 #include "StringUtils.h"
 
+using std::string;
+
 namespace StringUtils{
 
 std::string Slice(const std::string &str, ssize_t start, ssize_t end) noexcept{
-    // Replace code here
-    return "";
+    auto iter_begin = start < 0 ? str.cend() + start : str.cbegin() + start;
+    auto iter_end = end == 0 ? str.cend() : str.cbegin() + end;
+    return string(iter_begin, iter_end);
 }
 
 std::string Capitalize(const std::string &str) noexcept{
