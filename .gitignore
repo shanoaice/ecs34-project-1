@@ -23,9 +23,6 @@
 *.dll
 *.so.*
 
-testbin
-testobj
-obj
 # test coverages
 htmlcov
 
@@ -48,6 +45,11 @@ htmlcov
 build/
 Build/
 build-*/
+testbin/
+testobj/
+obj/
+
+.clice/
 
 # CMake generated files
 CMakeFiles/
