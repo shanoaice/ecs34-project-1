@@ -93,6 +93,8 @@ TEST(StringUtilsTest, ExpandTabs) {
 }
 
 TEST(StringUtilsTest, EditDistance) {
+  EXPECT_EQ(StringUtils::EditDistance("DIST", "DIST"), 0);
   EXPECT_EQ(StringUtils::EditDistance("DIST", "DEST"), 1);
   EXPECT_EQ(StringUtils::EditDistance("DIST", "DEXT"), 2);
+  EXPECT_EQ(StringUtils::EditDistance("DIST", "dext", true), 2);
 }
