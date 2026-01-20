@@ -13,14 +13,14 @@ COVERAGEDIR=./htmlcov
 INCLUDE  += -I $(INCLUDE_DIR)
 DEFINES  +=
 CFLAGS   += -Wall -Werror -Wpedantic
-CXXFLAGS += $(CFLAGS)
+CXXFLAGS += $(CFLAGS) --std=c++23
 LDFLAGS  += -fuse-ld=$(LD)
 
 GTEST_CFLAGS := $(shell pkg-config --cflags gtest_main)
 GTEST_LDFLAGS  := $(shell pkg-config --libs gtest_main)
 
 TEST_CFLAGS   := -Wall -Werror -Wpedantic -g -O0 --coverage $(GTEST_CFLAGS)
-TEST_CXXFLAGS := $(TEST_CFLAGS)
+TEST_CXXFLAGS := $(TEST_CFLAGS) --std=c++23
 TEST_LDFLAGS  := -fuse-ld=$(LD) -lgcov -lpthread $(GTEST_LDFLAGS)
 
 SOURCES := StringUtils
