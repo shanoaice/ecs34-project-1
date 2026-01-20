@@ -1,20 +1,18 @@
 # Project 1 README
 
-Student 1: Partner1 Name (123456789)
-
-Student 2: Partner2 Name (123456987)
-
 ## Project Status
 
-This the current status of the project ...
+This the current status of the project: finished, with some C++20 Ranges magic ;)
 
 ## Known Issues
 
-The project fails to function properly in ...
+The project fails to function properly in: no circumstances, as of the test shows. 100% coverage.
 
 ## Code References
 
 * [Makefile Tutorial by Example](https://makefiletutorial.com/)
+* [C++ Strings Library](https://en.cppreference.com/w/cpp/string/basic_string.html)
+* [C++ Ranges Library](https://en.cppreference.com/w/cpp/ranges.html)
 
 ## Generative AI Use
 
@@ -22,7 +20,7 @@ The project fails to function properly in ...
 
 I have a vector of strings and I want to get a vectors of string_views without copying. How can I do that in C++ 23
 
-### Answer 1
+### Answer 1 (Gemini 2.5 Pro)
 
 In C++23, the most efficient and idiomatic way to do this is by using **`std::ranges::views::transform`** combined with the new **`std::ranges::to`** container converter.
 
